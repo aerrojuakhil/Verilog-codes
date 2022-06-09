@@ -2,7 +2,7 @@ module dflipflop(q,qb,clk,d,rst);
    input clk,d,rst;
    output q,qb;
    reg q,qb;
-   always@(posedge clk or negedge rst)
+   always@(posedge clk)
    begin
       if(!rst)
       begin
